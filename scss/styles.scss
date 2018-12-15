@@ -1,3 +1,20 @@
-@import 'base/index',
-		'components/index',
-		'utilities/index'
+// ======================================
+//  Partial Imports
+// ======================================
+
+
+// Utilities
+
+        
+// Base Styles     
+@import 'base/base',
+		'base/normalize';
+
+
+// Component Styles
+@import 'components/buttons',
+		'components/forms',
+		'components/grid',
+		'components/image',
+		'components/navigation',
+		'components/typography';	
