@@ -1,3 +1,16 @@
-.nav-item {
-	
+.nav__item {
+	border-radius: 10px;
+	margin: 5px;
+	padding: 15px;
+	a {
+		text-decoration: none;
+		font-size: 1.15em;
+	}
+	&:hover {
+		background: #57E1C0;
+		a {
+			color: #fff;
+		}
+		
+	}
 }

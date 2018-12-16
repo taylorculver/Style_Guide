@@ -1,21 +1,39 @@
+%btn {
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px;
+	text-transform: uppercase;	
+}
+
 .btn--default {
-	
+	@extend %btn;
+	background: #51DEFC;
+	border-color: #51DEFC;
 }
 
 .btn--success {
-	
+	@extend %btn;
+	background: #64CB82;
+	border-color: #64CB82;	
 }
 
 .btn--error {
-	
+	@extend %btn;
+	background: #E4757B;
+	border-color: #E4757B;	
 }
 
 .btn--warning {
-	
+	@extend %btn;
+	background: #FD7857;
+	border-color: #FD7857;	
 }
 
 .btn--info {
-	
+	@extend %btn;
+	background: #927BC3;
+	border-color: #927BC3;	
 }
 
 .theme__colors {

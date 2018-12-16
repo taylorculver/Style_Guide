@@ -1,11 +1,16 @@
 .img--logo {
-	
+	margin: 15px;
+	padding: 10px;
 }
 
 .img--frame {
-	
+	padding: 10px;
+	border: 1px solid #DCDCDC;
+	max-width: 95%;
 }
 
 .img--avatar {
-	
+	margin: 10px;
+	padding: 10px;
+	object-fit: contain;	
 }

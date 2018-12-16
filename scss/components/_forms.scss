@@ -1,11 +1,19 @@
 .form {
-	
+	display: flex;
+	flex-direction: column;
+	width: 95%;
 }
 
 .form__label--hidden {
-	
+	display: none;
 }
 
 .form__input {
-	
+	margin: 10px;
+	padding: 10px;
+	font-weight: bold;
+	border: none;
+	border-bottom: 5px solid #57E1C0;
+	width: 80%;
+	align-self: center;
 }
