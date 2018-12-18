@@ -2,23 +2,20 @@
 //  Form Styles
 // ======================================
 
-
 .form {
 	display: flex;
 	flex-direction: column;
 	width: 95%;
-}
-
-.form__label--hidden {
-	display: none;
-}
-
-.form__input {
-	margin: 10px;
-	padding: 10px;
-	font-weight: bold;
-	border: none;
-	border-bottom: 5px solid $form-border-color;
-	width: 80%;
-	align-self: center;
+	&__input {
+		margin: 10px;
+		padding: 10px;
+		font-weight: bold;
+		border: none;
+		border-bottom: 5px solid $form-border-color;
+		width: 80%;
+		align-self: center;
+	}
+	&__label--hidden {
+		display: none;
+	}
 }

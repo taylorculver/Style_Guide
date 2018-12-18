@@ -3,11 +3,25 @@
 // ======================================
 
 * {
-	border: $default-border-color solid;
+	// border: $default-border-color solid;
 	color: $default-text-color;
 	font-family: $default-font;
 }
 
 p {
 	text-align: left;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+
+/* Media Query on iPad */
+@media (min-width: $break-m) {
+	ul {
+		display: flex;
+		flex-direction: row;
+	}
 }

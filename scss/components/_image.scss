@@ -2,22 +2,21 @@
 //  Image Styles
 // ======================================
 
-
-.img--logo {
-	margin: 15px;
-	padding: 10px;
-}
-
-.img--frame {
-	padding: 10px;
-	border: 1px solid $default-border-color;
-	max-width: 95%;
-}
-
-.img--avatar {
-	margin: 10px;
-	padding: 10px;
-	object-fit: contain;	
+.img {
+	&--logo {
+		margin: 15px;
+		padding: 10px;
+	}
+	&--frame {
+		padding: 10px;
+		border: 1px solid $default-border-color;
+		max-width: 95%;
+	}
+	&--avatar {
+		margin: 10px;
+		padding: 10px;
+		object-fit: contain;	
+	}
 }
 
 

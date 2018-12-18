@@ -26,37 +26,37 @@
 		padding: 10px;
 		margin: 5px;
 
-		&--3 {
+		&--3[class*="theme__colors"] {
 			@extend .grid__col;
 			background: #BB95C3;
 		}	
 
-		&--4 {
+		&--4[class*="theme__colors"]  {
 			@extend .grid__col;
 			background: #81E5FB;
 		}	
 
-		&--5 {
+		&--5[class*="theme__colors"]  {
 			@extend .grid__col;
 			background: #88D8A1;
 		}	
 
-		&--6 {
+		&--6[class*="theme__colors"]  {
 			@extend .grid__col;
 			background: #3DABD1;
 		}	
 
-		&--7 {
+		&--7[class*="theme__colors"]  {
 			@extend .grid__col;
 			background: #EE9CA2;
 		}	
 
-		&--8 {
+		&--8[class*="theme__colors"]  {
 			@extend .grid__col;
 			background: #FF9F87;
 		}	
 
-		&--9 {
+		&--9[class*="theme__colors"]  {
 			@extend .grid__col;
 			.nav {
 				text-align: center;
@@ -68,7 +68,7 @@
     		}
 		}	
 
-		&--12 {
+		&--12[class*="theme__colors"]  {
 			@extend .grid__col;
 			background: #7FE7D0;
 			display: flex;
