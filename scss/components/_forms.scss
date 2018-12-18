@@ -1,3 +1,8 @@
+// ======================================
+//  Form Styles
+// ======================================
+
+
 .form {
 	display: flex;
 	flex-direction: column;
@@ -13,7 +18,7 @@
 	padding: 10px;
 	font-weight: bold;
 	border: none;
-	border-bottom: 5px solid #57E1C0;
+	border-bottom: 5px solid $form-border-color;
 	width: 80%;
 	align-self: center;
 }

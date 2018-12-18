@@ -1,6 +1,11 @@
+// ======================================
+//  Base Styles
+// ======================================
+
 * {
-	border: #DCDCDC solid;
-	color: grey;
+	border: $default-border-color solid;
+	color: $default-text-color;
+	font-family: $default-font;
 }
 
 p {

@@ -3,8 +3,6 @@
 // ======================================
 
 
-// Utilities
-@import 'extends',
-		'functions',
-		'mixins',
-		'variables';
+// Base Styles     
+@import 'base',
+		'normalize';

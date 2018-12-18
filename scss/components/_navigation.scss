@@ -1,5 +1,10 @@
+// ======================================
+//  Navigation Styles
+// ======================================
+
+
 .nav__item {
-	border-radius: 10px;
+	border-radius: 5px;
 	margin: 5px;
 	padding: 15px;
 	a {
@@ -7,10 +12,19 @@
 		font-size: 1.15em;
 	}
 	&:hover {
-		background: #57E1C0;
+		background: $nav-hover-color;
 		a {
-			color: #fff;
+			color: $nav-text-color;
 		}
 		
 	}
+}
+
+
+/* Media Query on iPad */
+@media (min-width: $break-m) {
+	.nav__item {
+		padding: 5px;
+	}
+	
 }

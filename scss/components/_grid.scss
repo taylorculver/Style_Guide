@@ -1,3 +1,12 @@
+// ======================================
+//  Grid Styles
+// ======================================
+
+
+.centered {
+	max-width: $max-width;
+}
+
 .container {
 	margin: 0 auto;
 	width: 90%;
@@ -63,15 +72,15 @@
 			@extend .grid__col;
 			background: #7FE7D0;
 			display: flex;
-  			flex-direction: column;
-  			justify-content: space-evenly;
+			flex-direction: column;
+			justify-content: space-evenly;
 		}	
 	}
 }
 
 
 /* Media Query on iPad */
-@media (min-width: 768px) {
+@media (min-width: $break-m) {
 
 	.container {
 		width: 80%;
@@ -86,10 +95,17 @@
 	.grid__col--4,
 	.grid__col--5,
 	.grid__col--6,
-	.grid__col--7,
 	.grid__col--8,
 	.grid__col--12 {
 		flex-grow: 1;
+	}
+
+	.grid__col--7 {
+		flex-grow: 2;
+	}
+
+	.grid__col--8 {
+		flex-grow: 3;
 	}
 
 	.grid__col--9 {
