@@ -56,7 +56,7 @@
 			background: #FF9F87;
 		}	
 
-		&--9[class*="theme__colors"]  {
+		&--9 {
 			@extend .grid__col;
 			.nav {
 				text-align: center;
@@ -66,14 +66,17 @@
 			    margin: 0;
 			    padding: 0;
     		}
-		}	
+		}
 
-		&--12[class*="theme__colors"]  {
+		&--12  {
 			@extend .grid__col;
-			background: #7FE7D0;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-evenly;
+		}	
+		&--12[class*="theme__colors"]  {
+			@extend .grid__col;
+			background: #7FE7D0;
 		}	
 	}
 }
