@@ -3,6 +3,9 @@
 // ======================================
 
 %btn {
+	@include mq('med') {
+		padding: 5px 25px;
+	}
 	color: white;
 	border-radius: 10px;
 	padding: 10px;
@@ -36,13 +39,5 @@
 		@extend .btn;
 		background: $info-button-color;
 		border-color: $info-button-color;	
-	}
-}
-
-
-/* Media Query on iPad */
-@media (min-width: $break-m) {
-	%btn {
-		padding: 5px 25px;
 	}
 }

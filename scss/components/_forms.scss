@@ -3,8 +3,7 @@
 // ======================================
 
 .form {
-	display: flex;
-	flex-direction: column;
+	@include flexy(flex, column, null, null, null);
 	width: 95%;
 	&__input {
 		margin: 10px;

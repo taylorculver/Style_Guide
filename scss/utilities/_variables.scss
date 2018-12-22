@@ -24,7 +24,12 @@ $info-button-color: #927BC3;
 
 
 // Breakpoints
-$break-m: 769px;
+$breakpoints: (
+	'xs': 575px,
+	'sm': 576px,
+	'med': 768px,
+	'lg': 992px,
+);
 
 
 // Layout

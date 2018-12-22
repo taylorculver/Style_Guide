@@ -1,7 +1,37 @@
-// Center containers
+// Center container mixin
 @mixin center {
-  width: 90%;
   max-width: $max-width;
   margin-left: auto;
   margin-right: auto;
+}
+
+// Flexbox mixin
+@mixin flexy (
+	$disp: flex,
+	$dir: null,
+	$wrap: null,
+	$just: null,
+	$grow: null) {
+	display: $disp;
+	flex-direction: $dir;
+	flex-wrap: $wrap;
+	justify-content: $just;
+	flex-grow: $grow;
+}
+
+// Media Query Mixin
+@mixin mq($break) {
+	$value: map-get($breakpoints, $break);
+	$sm: map-get($breakpoints, 'sm');
+
+	@if $value < $sm {
+		@media (max-width: $value) {
+			@content;
+		}
+	}
+	@else {
+		@media (min-width: $break-s) {
+			@content;
+		}
+	}
 }

@@ -4,27 +4,34 @@
 
 
 .centered {
-	max-width: $max-width;
+	@include center;
 }
 
 .container {
+	@include mq('med') {
+		width: 80%;
+	}
 	margin: 0 auto;
 	width: 90%;
 }
 
 .grid {
 	&__row {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
+		@include flexy(flex, column, null, space-evenly, null);
+		@include mq('med') {
+			@include flexy(flex, row, null, null, null);
+
+		}
 		text-align: center;	
 		margin-bottom: 40px;
 	}
 
 	&__col {
+		@include flexy(flex, column, null, space-evenly, 1);
 		border-radius: 5px;
 		padding: 10px;
 		margin: 5px;
+		text-align: center;	
 
 		&--3[class*="theme__colors"] {
 			@extend .grid__col;
@@ -48,20 +55,27 @@
 
 		&--7[class*="theme__colors"]  {
 			@extend .grid__col;
+			@include mq('med') {
+				@include flexy(flex, row, null, null, 2);
+			}
 			background: #EE9CA2;
 		}	
 
 		&--8[class*="theme__colors"]  {
 			@extend .grid__col;
+			@include mq('med') {
+				@include flexy(flex, row, null, null, 3);
+			}
 			background: #FF9F87;
 		}	
 
 		&--9 {
 			@extend .grid__col;
 			.nav {
-				text-align: center;
-				display: flex;
-		  		flex-direction: column;
+				@include flexy(flex, column, null, flex-end, null);
+				@include mq('med') {
+					@include flexy(flex, row, null, null, null);
+				}
 		  		list-style: none;
 			    margin: 0;
 			    padding: 0;
@@ -70,50 +84,14 @@
 
 		&--12  {
 			@extend .grid__col;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-evenly;
-		}	
+			@include mq('med') {
+				@include flexy(flex, row, null, space-evenly, 1);
+			}
+		}
+
 		&--12[class*="theme__colors"]  {
 			@extend .grid__col;
 			background: #7FE7D0;
 		}	
-	}
-}
-
-
-/* Media Query on iPad */
-@media (min-width: $break-m) {
-
-	.container {
-		width: 80%;
-	}
-
-	.grid__row,
-	.grid__col--12  {
-  		flex-direction: row;
-	}
-
-	.grid__col--3,
-	.grid__col--4,
-	.grid__col--5,
-	.grid__col--6,
-	.grid__col--8,
-	.grid__col--12 {
-		flex-grow: 1;
-	}
-
-	.grid__col--7 {
-		flex-grow: 2;
-	}
-
-	.grid__col--8 {
-		flex-grow: 3;
-	}
-
-	.grid__col--9 {
-		.nav {
-			flex-direction: row;
-	    }
 	}
 }
